@@ -1,0 +1,11 @@
+<include file="Common/header"/>
+
+	<div id="banner">
+		<ul>
+		<foreach name="image_list" item="image">
+			<li><div class="flex_height" style="width:100%;height:100%;background: url(__PUBLIC__/{$image.img_url});no-repeat 50% 50%;background-size: cover;"></div></li>
+		</foreach>					
+		</ul>		
+		<div id="logo"><img src="{$company.logo}" alt="" /></div>
+	</div>
+
